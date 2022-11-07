@@ -38,6 +38,7 @@ class CompanyView(View):
         datos = {'message': 'Success'}
         return JsonResponse(datos)
 
+    # esto e suan prueba
     def put(self, request, id=0):
         jd = json.loads(request.body)
         companies = list(Company.objects.filter(id=id).values())
